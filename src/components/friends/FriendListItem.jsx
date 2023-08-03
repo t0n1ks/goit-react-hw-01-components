@@ -12,12 +12,12 @@ const FriendListItemWrapper = styled.li`
   padding-right: 75px;
 `;
 
-const Status = styled.span`
+const StatusDot = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: ${(props) => (props.isOnline ? 'green' : 'red')};
+  background-color: ${(props) => (props.isonline === 'true' ? 'green' : 'red')};
 `;
 
 const Avatar = styled.img`
@@ -35,7 +35,7 @@ const Name = styled.p`
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <FriendListItemWrapper>
-      <Status isOnline={isOnline} />
+      <StatusDot isonline={isOnline.toString()} />
       <Avatar src={avatar} alt="User avatar" />
       <Name>{name}</Name>
     </FriendListItemWrapper>
