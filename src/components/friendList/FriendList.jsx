@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import FriendListItem from './FriendListItem';
+import FriendListItem from '../friendListItem/FriendListItem';
 
 const FriendListWrapper = styled.ul`
   list-style: none;

@@ -1,30 +1,21 @@
 import React from 'react';
-import Profile from './user/Profile';
-import user from './user/user.json';
-import Statistics from './data/Statistics';
-import data from './data/data.json';
-import FriendList from './friends/FriendList';
-import friends from './friends/friends.json';
-import TransactionHistory from './transactions/TransactionHistory';
-import transactions from './transactions/transactions.json';
-import styled from 'styled-components';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: #010101;
-  overflow-y: auto;
-`;
+import Profile from './profile/Profile';
+import Statistics from './statistics/Statistics';
+import FriendList from './friendList/FriendList';
+import TransactionHistory from './transactionHistory/TransactionHistory';
+import { Container } from './styledApp/Container.styled';
+import { Section } from './styledApp/Section.styled';
 
-const Section = styled.div`
-  margin-bottom: 25px;
-`;
+import user from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/profile/user.json';
+import data from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/dataStatistics/data.json';
+import friends from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/friendList/friends.json';
+import transactions from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/transactions/transactions.json';
+
 
 export const App = () => {
   return (
+    <Section>
     <Container>
       <Section>
         <Profile
@@ -45,5 +36,6 @@ export const App = () => {
         <TransactionHistory items={transactions} />
       </Section>
     </Container>
+    </Section>
   );
 };
