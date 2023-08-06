@@ -7,10 +7,10 @@ import TransactionHistory from './transactionHistory/TransactionHistory';
 import { Container } from './styledApp/Container.styled';
 import { Section } from './styledApp/Section.styled';
 
-import user from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/profile/user.json';
-import data from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/dataStatistics/data.json';
-import friends from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/friendList/friends.json';
-import transactions from '/GidHubProd/REact/goit-react-hw-01-components/src/helpers/transactions/transactions.json';
+import user from '../helpers/profile/user.json';
+import data from '../helpers/dataStatistics/data.json';
+import friends from '../helpers/friendList/friends.json';
+import transactions from '../helpers/transactions/transactions.json';
 
 
 export const App = () => {
